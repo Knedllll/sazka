@@ -1,0 +1,157 @@
+/* Přidání Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* Základní stylování pro tělo stránky */
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  background-color: #f3f4f6;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Animace mlg */
+.mlg {
+  animation: mlg-animation 0.5s infinite;
+}
+
+/* Klíčové snímky pro animaci mlg */
+@keyframes mlg-animation {
+  0%,
+  33% {
+    background-color: rgb(117, 209, 63);
+    border: 3px solid #e50000;
+  }
+  33%,
+  66% {
+    background-color: #e50000;
+    border: 3px solid blue;
+  }
+  66%,
+  100% {
+    background-color: blue;
+    border: 3px solid rgb(117, 209, 63);
+  }
+}
+
+/* Stylování pro nadpis */
+h1 {
+  background-color: #ffd700;
+  color: #fff;
+  padding: 20px 0;
+  margin: 0;
+  font-size: 2em;
+  text-shadow: 2px 2px #000;
+  border-bottom: 4px solid #e09e00;
+}
+
+/* Stylování pro formulář */
+form {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Flexbox pro inputy s čísly */
+.number-inputs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Skrytí popisků */
+label {
+  display: none;
+}
+
+/* Stylování pro inputy typu číslo */
+input[type="number"] {
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  font-size: 1.2em;
+  border: 2px solid #000;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #f1c40f;
+  color: #000;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Efekt při najetí na input */
+input[type="number"]:hover {
+  background-color: #e1b800;
+  transform: scale(1.1);
+}
+
+/* Stylování pro tlačítka */
+button {
+  padding: 10px 20px;
+  margin: 20px 0;
+  font-size: 1.2em;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover efekt pro tlačítka */
+button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+/* Stylování pro výstupní bloky */
+#VylosovaneCislo,
+#vysledek {
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  font-size: 1.2em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Stylování pro specifické výstupy */
+#VylosovaneCislo {
+  background-color: #f1c40f;
+  color: #fff;
+}
+
+#vysledek {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+/* Animace pro class-ales */
+.class-ales {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120px;
+  height: 120px;
+  margin: -60px 0 0 -60px;
+  animation: spin 1s linear infinite;
+}
+
+/* Klíčové snímky pro animaci spin */
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

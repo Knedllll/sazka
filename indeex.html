@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      href="https://cdn4.iconfinder.com/data/icons/gambling-38/340/casino_roulette_wheel_gambling_risk_gamble_lucky-512.png"
+      type="image/x-icon"
+      alt="Icon"
+    />
+    <title>SÁZEJ S CHROPIKEM</title>
+  </head>
+  <body>
+    <h1>! ! ! Sázej a vyhraj ! ! !</h1>
+    <br />
+
+    <form>
+      <div class="number-inputs">
+        <label>Číslo 1:</label
+        ><input
+          type="number"
+          id="cislo1"
+          class="circle"
+          onchange="ZkontrolujVstupu('cislo1')"
+        />
+        <label>Číslo 2:</label
+        ><input
+          type="number"
+          id="cislo2"
+          class="circle"
+          onchange="ZkontrolujVstupu('cislo2')"
+        />
+        <label>Číslo 3:</label
+        ><input
+          type="number"
+          id="cislo3"
+          class="circle"
+          onchange="ZkontrolujVstupu('cislo3')"
+        />
+        <label>Číslo 4:</label
+        ><input
+          type="number"
+          id="cislo4"
+          class="circle"
+          onchange="ZkontrolujVstupu('cislo4')"
+        />
+        <label>Číslo 5:</label
+        ><input
+          type="number"
+          id="cislo5"
+          class="circle"
+          onchange="ZkontrolujVstupu('cislo5')"
+        />
+        <label>Číslo 6:</label
+        ><input
+          type="number"
+          id="cislo6"
+          class="circle"
+          onchange="ZkontrolujVstupu('cislo6')"
+        />
+      </div>
+      <button type="button" onclick="if(ready){VylosujCislo();Zkontroluj()};">
+        SÁZEJ
+      </button>
+    </form>
+    <h2>Vylosovaná čísla:</h2>
+    <label for="VylosovaneCislo">Vylosovane cislo:</label>
+    <div id="VylosovaneCislo"></div>
+    <div id="vysledek"></div>
+    <audio id="audio-metal-pipe">
+      <source src="src/metal_pipe.mp3" type="audio/mpeg" id="audio-src" />
+    </audio>
+    <audio id="audio-wolf-howling">
+      <source
+        src="src/Wolf_howling_sound.mp3"
+        type="audio/mpeg"
+        id="audio-src"
+      />
+    </audio>
+    <audio id="audio-goofy-ahh">
+      <source
+        src="src/Goofy_Ahh_ringtone_sound_effect.mp3"
+        type="audio/mpeg"
+        id="audio-src"
+      />
+    </audio>
+    <audio id="audio-SpongeBob">
+      <source
+        src="src/SpongeBob_disappointed_sound_effect.mp3"
+        type="audio/mpeg"
+        id="audio-src"
+      />
+    </audio>
+    <audio id="audio-horse">
+      <source
+        src="src/mixkit-hard-big-horse-snort-80.wav"
+        type="audio/mpeg"
+        id="audio-src"
+      />
+    </audio>
+
+    <script src="script.js"></script>
+    <img
+      class="class-ales"
+      id="ales1"
+      src="src/ales.jpg"
+      style="opacity: 0"
+      width="100px"
+    />
+    <img
+      class="class-ales"
+      id="ales2"
+      src="src/ales.jpg"
+      style="opacity: 0"
+      width="100px"
+    />
+    <img
+      class="class-ales"
+      id="ales3"
+      src="src/ales.jpg"
+      style="opacity: 0"
+      width="100px"
+    />
+    <img
+      class="class-ales"
+      id="ales4"
+      src="src/ales.jpg"
+      style="opacity: 0"
+      width="100px"
+    />
+    <img
+      class="class-ales"
+      id="ales5"
+      src="src/ales.jpg"
+      style="opacity: 0"
+      width="100px"
+    />
+    <img
+      class="class-ales"
+      id="ales6"
+      src="src/ales.jpg"
+      style="opacity: 0"
+      width="100px"
+    />
+    <img
+      class="class-ales"
+      id="ales7"
+      src="src/ales.jpg"
+      style="opacity: 0"
+      width="100px"
+    />
+    <img
+      class="class-ales"
+      id="ales8"
+      src="src/ales.jpg"
+      style="opacity: 0"
+      width="100px"
+    />
+    <img
+      class="class-ales"
+      id="ales9"
+      src="src/ales.jpg"
+      style="opacity: 0"
+      width="100px"
+    />
+    <img
+      class="class-ales"
+      id="ales10"
+      src="src/ales.jpg"
+      style="opacity: 0"
+      width="100px"
+    />
+    <img
+      class="class-ales"
+      id="ales11"
+      src="src/ales.jpg"
+      style="opacity: 0"
+      width="100px"
+    />
+    <img
+      class="class-ales"
+      id="ales12"
+      src="src/ales.jpg"
+      style="opacity: 0"
+      width="100px"
+    />
+    <img
+      class="class-ales"
+      id="ales13"
+      src="src/ales.jpg"
+      style="opacity: 0"
+      width="100px"
+    />
+    <img
+      class="class-ales"
+      id="ales14"
+      src="src/ales.jpg"
+      style="opacity: 0"
+      width="100px"
+    />
+    <img
+      class="class-ales"
+      id="ales15"
+      src="src/ales.jpg"
+      style="opacity: 0"
+      width="100px"
+    />
+    <footer>
+      <p>
+        &copy; 2024 Dykobraz, Chropik, Knedllll, Vojta . Všechna práva
+        vyhrazena.
+      </p>
+    </footer>
+  </body>
+</html>
